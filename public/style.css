@@ -1,0 +1,60 @@
+@font-face {
+    font-family: android;
+    src: url(asset/android_7.ttf);
+}
+
+*{
+    font-family: android;
+}
+body{
+    background-image: url("asset/background.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    overflow: hidden;
+}
+#content{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+#power{
+    width: 20vw;
+    height: 20vw;
+    background-color: aliceblue;
+    border-radius: 50%;
+    background-image: url("asset/power.png");
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+    margin: 1vw;
+    width: 10vw;
+}
+button, input, select{ 
+    vertical-align: middle;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    background: none;
+    border-color: rgb(105, 186, 233);
+    border-width: 3px;
+    border-style: solid;
+    color: rgb(105, 186, 233);
+    height: 9vh;
+}
+button:hover{
+    color: white;
+    border-color: white;
+}
+input,select{
+    width: 15vw;
+}
+
+.off{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}

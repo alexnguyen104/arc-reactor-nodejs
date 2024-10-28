@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arc Reactor Control</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="asset/power.png" type="image/x-icon">
+</head>
+
+<body>
+    <div id="content">
+        <div>
+            <input type="color" id="color">
+            <button type="button" id="color_btn">color</button>
+        </div>
+        <div id="power"></div>
+        <div>
+            <select name="brightness" id="brightness">
+                <option value=100>medium (100)</option>
+                <option value=20>light (20)</option>
+                <option value=255>strong (255)</option>
+            </select>
+            <button type="button" class="" id="brightness_btn">brightness</button>
+        </div>
+
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
